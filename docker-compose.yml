@@ -1,0 +1,7 @@
+name: nostalking
+
+services:
+  nostalking:
+    build: .
+    ports:
+      - "8080:8080"

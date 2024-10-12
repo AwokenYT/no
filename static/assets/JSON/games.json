@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Subway Surfers",
+    "id": "1",
+    "target": "/cdn/subway-surfers/index.html",
+    "image": "/cdn/subway-surfers/assets/images/app-icon-192.png"
+  },
+  {
+    "name": "Craft Mine",
+    "id": "2",
+    "target": "/cdn/craft-mine/index.html",
+    "image": "/cdn/craft-mine/images/logo.jpeg"
+  },
+  {
+    "name": "Monkey Mart",
+    "id": "3",
+    "target": "/cdn/monkey-mart/index.html",
+    "image": "/cdn/monkey-mart/icon.png"
+  },
+  {
+    "name": "Basketball Stars",
+    "id": "4",
+    "target": "/cdn/basketball-stars/index.html",
+    "image": "/cdn/basketball-stars/assets/images/logo.jpg"
+  },
+  {
+    "name": "Mini DayZ",
+    "id": "5",
+    "target": "/cdn/mini-dayz/index.html",
+    "image": "/cdn/mini-dayz/icon-256.png"
+  },
+  {
+    "name": "Super Liquid Soccer",
+    "id": "6",
+    "target": "/cdn/super-liquid-soccer/index.html",
+    "image": "/cdn/super-liquid-soccer/index.512x512.png"
+  },
+  {
+    "name": "Rooftop Snipers",
+    "id": "7",
+    "target": "/cdn/rooftop-snipers/index.html",
+    "image": "/cdn/rooftop-snipers/icon.png"
+  },
+  {
+    "name": "Retro Bowl",
+    "id": "8",
+    "target": "/cdn/retro-bowl/index.html",
+    "image": "/cdn/retro-bowl/img/icon.jpg"
+  },
+  {
+    "name": "Slope",
+    "id": "9",
+    "target": "/cdn/slope/index.html",
+    "image": "/cdn/slope/slope4.jpeg"
+  },
+  {
+    "name": "Stickman Hook",
+    "id": "10",
+    "target": "/cdn/stickman-hook/index.html",
+    "image": "/cdn/stickman-hook/images/icon.jpeg"
+  },
+  {
+    "name": "Temple Run 2",
+    "id": "11",
+    "target": "/cdn/temple-run-2/index.html",
+    "image": "/cdn/temple-run-2/img/icons/icon-512x512.png"
+  },
+  {
+    "name": "Gorescript",
+    "id": "12",
+    "target": "/cdn/gorescript/play/index.html",
+    "image": "/cdn/gorescript/img/logo_black.png"
+  },
+  {
+    "name": "Super Mario 64",
+    "id": "13",
+    "target": "/cdn/sm64/index.html",
+    "image": "/cdn/sm64/logo.png"
+  },
+  {
+    "name": "Among Us",
+    "id": "14",
+    "target": "/cdn/among-us/index.html",
+    "image": "/cdn/among-us/img/logo.png"
+  },
+  {
+    "name": "Basket Random",
+    "id": "15",
+    "target": "/cdn/basket-random/index.html",
+    "image": "/cdn/basket-random/icon.jpeg"
+  },
+  {
+    "name": "HexGL",
+    "id": "16",
+    "target": "/cdn/hexgl/index.html",
+    "image": "https://raw.githubusercontent.com/BKcore/HexGL/master/icon_256.png"
+  },
+  {
+    "name": "Eaglercraft",
+    "id": "17",
+    "target": "/cdn/eaglecraft/index.html",
+    "image": "https://i.ibb.co/h7JgY9g/download-2.jpg"
+  },
+  {
+    "name": "1v1.lol",
+    "id": "18",
+    "target": "/cdn/1v1-lol/index.html",
+    "image": "https://cdn6.aptoide.com/imgs/0/c/b/0cb9bdcd2f65d20f7354edf9fb7db5b5_icon.png"
+  },
+  {
+    "name": "Backrooms",
+    "id": "19",
+    "target": "/cdn/backrooms/index.html",
+    "image": "https://play-lh.googleusercontent.com/363qcJv7p0F1lH5n_2WIdEhf45znbtmp-IyOVclu9zN9mFUBjQKO6rJg1q6m0qxjBg"
+  },
+  {
+    "name": "Pandemic 2",
+    "id": "20",
+    "target": "/cdn/pandemic-2/index.html",
+    "image": "https://i.ibb.co/B6J0tq1/pandemic-2.jpg"
+  }
+]
