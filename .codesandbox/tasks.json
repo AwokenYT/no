@@ -11,13 +11,11 @@
   "tasks": {
     "start": {
       "name": "start",
-      "command": "npm run start",
-      "runAtStart": false
+      "command": "npm run start"
     },
     "prod": {
       "name": "prod",
-      "command": "npm run prod",
-      "runAtStart": false
+      "command": "npm run prod"
     },
     "dev": {
       "name": "dev",

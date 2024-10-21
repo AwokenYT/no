@@ -1,48 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <!--el:meta-->
-    <!--el:analytics-->
-
-    <link rel="stylesheet" href="/assets/css/main.css">
-
+  <head>
+    <link rel="stylesheet" href="/assets/css/main.css" />
     <title>Home | Nostalking</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--el:navbar-->
-    <!--el:side ar-->
+    <!--el:sidebar-->
 
     <div class="row mainpage">
-        <div class="container">
-            <h1 class="nomargin">Featured Game</h1>
+      <div class="container">
+        <h1 class="nomargin">Featured Game</h1>
 
-            <img class="featured" src="https://cdn.prod.website-files.com/64412b807255927a6bd27042/646379e8ff0a8d87404db507_SUBWAY_SURFERS_KEY_ART_1920x1080_LANDSCAPE_01.png"/>
-        </div>
+        <img
+          class="featured"
+          src="https://cdn.prod.website-files.com/64412b807255927a6bd27042/646379e8ff0a8d87404db507_SUBWAY_SURFERS_KEY_ART_1920x1080_LANDSCAPE_01.png"
+        />
+      </div>
 
-        <div class="container right">
-            <h1>nostalking</h1>
-            <p>
-                <a href="https://forms.gle/YMrk82Q1TAyCh5Vh9" target="_blank" class="blue">Suggest a game</a>
-            </p>
+      <div class="container right">
+        <h1>nostalking</h1>
+        <p>
+          <a
+            href="https://forms.gle/YMrk82Q1TAyCh5Vh9"
+            target="_blank"
+            class="blue"
+            >Suggest a game</a
+          >
+        </p>
 
-            <hr>
+        <hr />
 
-            <h2 style="margin-bottom: 0px;">Changelog</h2>
-            <small>
-                <a href="/changelog" class="blue">Full changelog</a>
-            </small>
+        <h2 style="margin-bottom: 0px">Changelog</h2>
+        <small>
+          <a href="/changelog" class="blue">Full changelog</a>
+        </small>
 
-            <br>
+        <br />
 
-            <div id="changelog"></div>
-        </div>
+        <div id="changelog"></div>
+      </div>
     </div>
 
+    <script>
+      // Initialize visit counts
+      const totalVisitsKey = "totalVisitsIndex";
+      const uniqueVisitorsKey = "uniqueVisitorsIndex";
+      const visitorIdKey = "visitorIdIndex";
+
+      // Get visit counts from localStorage or initialize
+      let totalVisits = parseInt(localStorage.getItem(totalVisitsKey)) || 0;
+      let uniqueVisitors =
+        parseInt(localStorage.getItem(uniqueVisitorsKey)) || 0;
+
+      // Generate a unique visitor ID (using localStorage)
+      let visitorId = localStorage.getItem(visitorIdKey);
+
+      if (!visitorId) {
+        // If no visitorId exists, create one
+        visitorId = Date.now().toString();
+        localStorage.setItem(visitorIdKey, visitorId);
+        uniqueVisitors++; // Increment unique visitors count
+      }
+
+      // Increment total visits count
+      totalVisits++;
+
+      // Save updated counts to localStorage
+      localStorage.setItem(totalVisitsKey, totalVisits);
+      localStorage.setItem(uniqueVisitorsKey, uniqueVisitors);
+
+      // Update the stats in the HTML
+      document.getElementById("totalVisits").textContent = totalVisits;
+      document.getElementById("uniqueVisitors").textContent = uniqueVisitors;
+    </script>
+
     <script src="/assets/js/main.js" type="module"></script>
-
-    <!--el:{{mode === 'dev'}}:development-->
-</body>
-
+  </body>
 </html>

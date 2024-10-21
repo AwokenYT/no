@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <title>Statistics | Nostalking</title>
+  </head>
+
+  <body>
+    <h1>Website Statistics</h1>
+
+    <div id="stats">
+      <div>Total Visits to Home: <span id="totalVisitsHome">0</span></div>
+      <div>Unique Visitors to Home: <span id="uniqueVisitorsHome">0</span></div>
+      <div>Total Visits to Games: <span id="totalVisitsGames">0</span></div>
+      <div>
+        Unique Visitors to Games: <span id="uniqueVisitorsGames">0</span>
+      </div>
+    </div>
+
+    <script>
+      // Get visit counts from localStorage
+      const totalVisitsKeyIndex = "totalVisitsIndex";
+      const uniqueVisitorsKeyIndex = "uniqueVisitorsIndex";
+      const totalVisitsKeyGames = "totalVisitsGames";
+      const uniqueVisitorsKeyGames = "uniqueVisitorsGames";
+
+      // Retrieve counts from localStorage or set to 0 if not present
+      const totalVisitsHome =
+        parseInt(localStorage.getItem(totalVisitsKeyIndex)) || 0;
+      const uniqueVisitorsHome =
+        parseInt(localStorage.getItem(uniqueVisitorsKeyIndex)) || 0;
+      const totalVisitsGames =
+        parseInt(localStorage.getItem(totalVisitsKeyGames)) || 0;
+      const uniqueVisitorsGames =
+        parseInt(localStorage.getItem(uniqueVisitorsKeyGames)) || 0;
+
+      // Update the stats in the HTML
+      document.getElementById("totalVisitsHome").textContent = totalVisitsHome;
+      document.getElementById("uniqueVisitorsHome").textContent =
+        uniqueVisitorsHome;
+      document.getElementById("totalVisitsGames").textContent =
+        totalVisitsGames;
+      document.getElementById("uniqueVisitorsGames").textContent =
+        uniqueVisitorsGames;
+    </script>
+  </body>
+</html>
