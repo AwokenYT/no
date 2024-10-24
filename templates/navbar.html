@@ -15,11 +15,11 @@
       ><i class="fa-solid fa-rocket-launch fa-xs"></i>Apps</a
     >
     <a href="/stats" class="navButton"
-      ><i class="fa-solid fa-door-open fa-xs"></i>Total Visits -
+      ><i class="fa-solid fa-door-open fa-xs"></i>Visits |
       <span id="visitCount">0</span></a
     >
     <a href="/stats" class="navButton"
-      ><i class="fa-solid fa-eye fa-xs"></i>Unique Views -
+      ><i class="fa-solid fa-eye fa-xs"></i>Views |
       <span id="uniqueViews">0</span></a
     >
     <a
@@ -31,25 +31,3 @@
     >
   </div>
 </div>
-
-<script>
-  // Keys for localStorage
-  const visitCountKey = "totalVisits"; // Key for total visits across the site
-  const uniqueViewsKey = "uniqueViews"; // Key for unique views across the site
-  const hasVisitedKey = "hasVisited"; // Key to track if user has visited any page
-
-  // Increment and set global visit count
-  let visitCount = localStorage.getItem(visitCountKey) || 0;
-  visitCount = parseInt(visitCount) + 1; // Increment count
-  localStorage.setItem(visitCountKey, visitCount); // Store updated count
-  document.getElementById("visitCount").textContent = visitCount; // Display count
-
-  // Increment and set unique view count
-  let uniqueViews = localStorage.getItem(uniqueViewsKey) || 0;
-  if (!localStorage.getItem(hasVisitedKey)) {
-    uniqueViews = parseInt(uniqueViews) + 1; // Increment unique views
-    localStorage.setItem(uniqueViewsKey, uniqueViews); // Store updated unique views
-    localStorage.setItem(hasVisitedKey, true); // Mark as visited
-  }
-  document.getElementById("uniqueViews").textContent = uniqueViews; // Display unique view count
-</script>
