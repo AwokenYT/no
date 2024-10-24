@@ -20,7 +20,6 @@ import url from "node:url";
 import fs from "node:fs";
 
 const app = express();
-const cookieParser = require("cookie-parser");
 const server = http.createServer();
 const bareServer = createBareServer("/bare/");
 const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
@@ -28,6 +27,7 @@ const packageFile = JSON.parse(
   fs.readFileSync(path.join(__dirname, "../package.json"))
 );
 
+app.use(express.json());
 const swPaths = ["/uv/sw.js", "/assets/js/offline.js"];
 
 app.get(
