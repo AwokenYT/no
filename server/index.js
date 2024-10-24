@@ -30,22 +30,6 @@ const packageFile = JSON.parse(
 
 const swPaths = ["/uv/sw.js", "/assets/js/offline.js"];
 
-let totalVisits = 0;
-let uniqueViews = 0;
-app.use(express.json());
-app.use(cookieParser());
-api(app);
-
-app.get("/", (req, res) => {
-  totalVisits++;
-  if (!req.cookies.hasVisited) {
-    uniqueViews++;
-    res.cookie("hasVisited", true, { maxAge: 100 * 365 * 24 * 60 * 60 * 1000 });
-  }
-  document.getElementById("visitCount").textContent = visitCount;
-  document.getElementById("uniqueViews").textContent = uniqueViews;
-});
-
 app.get(
   "/cdn/*",
   cors({
